@@ -98,11 +98,11 @@ function ModelController(tick = 0, fps = 3, running = false, finished = false) {
  * Set up the the FPS control
  */
 const fpsControl = new Slider("#fps", {
-  max: 20,
+  max: 120,
   min: 0,
   value: controller.fps,
-  ticks: [0, 20],
-  ticks_labels: [0, 20],
+  ticks: [0, 120],
+  ticks_labels: [0, 120],
   ticks_position: [0, 100],
 });
 document.getElementById("fps").onchange = () =>
